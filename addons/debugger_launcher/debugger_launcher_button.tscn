@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://crgvoo6i2bwb7"]
+
+[ext_resource type="Texture2D" uid="uid://cxh12k56qbaxn" path="res://addons/debugger_launcher/icons/rocket_icon_16_disabled.png" id="1_rvjh1"]
+[ext_resource type="Texture2D" uid="uid://qicybtdq0ubn" path="res://addons/debugger_launcher/icons/rocket_icon_16_enabled.png" id="2_86s1x"]
+
+[node name="btnDebuggerLauncher" type="TextureButton"]
+texture_filter = 1
+custom_minimum_size = Vector2(22, 22)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+button_pressed = true
+texture_normal = ExtResource("1_rvjh1")
+texture_pressed = ExtResource("2_86s1x")
+stretch_mode = 5

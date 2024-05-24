@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://dr4ccrkk7t7jb"]
+
+[ext_resource type="Script" path="res://example/Example.cs" id="1_3o85x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22gcc"]
+content_margin_left = 25.0
+content_margin_top = 25.0
+content_margin_right = 25.0
+content_margin_bottom = 25.0
+bg_color = Color(0.054902, 0, 0.396078, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qofai"]
+bg_color = Color(0.403922, 0.513726, 1, 1)
+
+[node name="ExampleScene" type="Node2D" node_paths=PackedStringArray("_btnHitBreakpoint")]
+script = ExtResource("1_3o85x")
+_btnHitBreakpoint = NodePath("CanvasLayer/Control/btnTest")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnTest" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -15.5
+offset_right = 39.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxFlat_22gcc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qofai")
+text = "Press Me"
