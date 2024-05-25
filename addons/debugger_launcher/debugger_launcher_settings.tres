@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://biyuoqfvsp65w"]
 
-[ext_resource type="Script" path="res://addons/debugger_launcher/src/DebuggerLauncherSettings.cs" id="1_xgq20"]
+[ext_resource type="Script" path="res://addons/debugger_launcher/src/DebuggerLauncherSettings.cs" id="1_yy2fw"]
 
 [resource]
-script = ExtResource("1_xgq20")
+script = ExtResource("1_yy2fw")
 LaunchVisualStudioLauncher = true
