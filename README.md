@@ -9,10 +9,11 @@
 The DebuggerLauncher is a convenient plugin for the **Godot Engine 4.x**, designed to enhance debugging processes for developers using **C#** with **Visual Studio** (*Visual Studio Code* is not supported). It integrates directly into the Godot editor by adding a toggle button to the toolbar. This button allows developers to toggle whether the Visual Studio Debugger should be attached when launching the game. By simplifying the process of connecting the debugger, this plugin makes it much easier for developers to start debugging their game directly from the Godot editor, streamlining the development and troubleshooting process.
 
 ## 📝 Installation
-1. Go to the [release tab](https://github.com/schw3de/debugger-launcher/releases) and download the latest version.
+1. Go to the [release tab](https://github.com/schw3de/debugger-launcher/releases) and download the latest version (`debugger-launcher-x.x.x.zip`).
 2. Install the plugin via the AssetLib tab (`AssetLib -> Import`).
-3. Activate the plugin.
-4. Move the `VisualStudioLauncher` autoload entry to the first position (`Project Settings -> Autoload`). This ensures that you will be able to debug your Autoload scripts.
+3. Build the solution
+4. Activate the plugin
+5. Move the `VisualStudioLauncher` autoload entry to the first position (`Project Settings -> Autoload`). This ensures that you will be able to debug your Autoload scripts
 
 ## 🔧 How to use it
 If the plugin has been installed successfully, you should see the Debugger Launcher icon in the Godot editor toolbar.
